@@ -1,0 +1,4 @@
+data/*/frames
+*.pyci
+**/__pycache__/
+
