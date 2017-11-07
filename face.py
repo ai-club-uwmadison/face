@@ -22,6 +22,6 @@ def faceRetriver(img):
     result = []
     for (x,y,w,h) in faces:
         crop_img = convertToRGB(cv2.resize(img[y:y+h, x:x+w], target_size))
-        crop_img.append((result, (x,y,w,h)))
+        result.append((crop_img, (x,y,w,h)))
 
     return result
