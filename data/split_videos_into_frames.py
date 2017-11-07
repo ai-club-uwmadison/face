@@ -6,7 +6,7 @@ import os
 from glob import glob
 import numpy as np
 
-EXTENSIONS = ['mp4']
+EXTENSIONS = ['mp4', 'MOV']
 
 def main():
     
