@@ -1,0 +1,3 @@
+[submodule "face-data"]
+	path = face-data
+	url = git@github.com:ai-club-uwmadison/face-data
