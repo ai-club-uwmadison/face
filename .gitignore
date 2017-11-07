@@ -1,4 +1,4 @@
 data/*/frames
 *.pyci
 **/__pycache__/
-
+.DS_Store
