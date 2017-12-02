@@ -19,14 +19,14 @@ def faceRetriever(img):
 
     result = []
 
-    faces = frontFace_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=6, minSize=(50,50))
+    faces = frontFace_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(80,80))
     for (x,y,w,h) in faces:
         crop_img = cv2.resize(img[y:y+h, x:x+w], target_size)
         result.append((crop_img, (x,y,w,h)))
         
-    faces = sideFace_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=6, minSize=(50,50))
+    faces = sideFace_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(80,80))
     for (x,y,w,h) in faces:
         crop_img = cv2.resize(img[y:y+h, x:x+w], target_size)
         result.append((crop_img, (x,y,w,h)))
-
+ 
     return result
